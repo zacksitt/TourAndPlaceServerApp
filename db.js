@@ -1,9 +1,9 @@
 const Sequelize = require("sequelize");
 
 const sequelize = new Sequelize(
-   'tours_and_place',
+   'tour_and_place',
    'root',
-   'root@2020',
+   'root@2021',
     {
       host: 'localhost',
       dialect: 'mysql'
