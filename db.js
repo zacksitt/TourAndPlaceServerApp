@@ -2,10 +2,10 @@ const Sequelize = require("sequelize");
 
 const sequelize = new Sequelize(
    'tour_and_place',
-   'root',
-   'root@2021',
+   'webuser',
+   'Md7oUeyRx56FBq5E',
     {
-      host: 'localhost',
+      host: '128.199.215.204',
       dialect: 'mysql'
     }
   );
