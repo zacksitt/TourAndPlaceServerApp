@@ -1,11 +1,11 @@
 const Sequelize = require("sequelize");
 
 const sequelize = new Sequelize(
-   'tour_and_place',
-   'webuser',
-   'Md7oUeyRx56FBq5E',
+   process.env.DB_NAME,
+   process.env.DB_USER_NAME,
+   process.env.DB_PASSWORD,
     {
-      host: '128.199.215.204',
+      host: process.env.DB_HOST,
       dialect: 'mysql'
     }
   );
