@@ -1,14 +1,5 @@
 const {Sequelize, DataTypes} = require("sequelize");
-
-const sequelize = new Sequelize(
-   'tours_and_place',
-   'root',
-   'root@2020',
-    {
-      host: 'localhost',
-      dialect: 'mysql'
-    }
-  );
+const sequelize = require("../db");
 
 const City = sequelize.define("cities", {
     country: {
