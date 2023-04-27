@@ -31,10 +31,6 @@ const create = async (req,res) => {
         res.send({status:1,"msg":"Updated place successfully"})
 
     }else{
-        tour.images = [];
-        tour.languages = [];
-        tour.itineary = [];
-        tour.place_id = 1;
         let newTour = await Tour.create(tour);
         res.send({status:1,"msg":"Created new place successfully",tour:newTour})
     }
